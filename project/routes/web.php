@@ -41,3 +41,7 @@ Route::get('/about', function () {
 Route::get('/tournaments', function () {
     return view('tournaments');
 })->name('tournaments');
+
+Route::get('/blog', function () {
+    return view('blog');
+})->name('blog');
