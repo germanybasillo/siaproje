@@ -170,7 +170,7 @@
       <h2>Latest News</h2>
       <div class="news-highlights">
         <div class="news">
-          <img src="asset/images/" alt="News Image 1">
+          <img src="asset/images/111.jpg" alt="News Image 1">
           <div class="news-content">
             <h3>Major Patch Update Released</h3>
             <p class="date">Published on March 10, 2024</p>
@@ -179,7 +179,7 @@
           </div>
         </div>
         <div class="news">
-          <img src="asset/images/" alt="News Image 2">
+          <img src="asset/images/222.jpg" alt="News Image 2">
           <div class="news-content">
             <h3>New Esports Tournament Announced</h3>
             <p class="date">Published on February 25, 2024</p>
@@ -210,15 +210,16 @@
         <!-- Add more testimonials as needed -->
       </div>
       
+      
       <div class="social-media">
         <h3>Connect with us on social media:</h3>
         <div class="social-icons">
-          <a href="#" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
-          <a href="#" class="social-icon"><img src="twitter-icon.png" alt="Twitter"></a>
-          <a href="#" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+          <a href="https://www.facebook.com/profile.php?id=61554736177114" class="social-icon"><img src="asset/images/14.png" alt="Facebook"></a>
+          <a href="https://github.com/germanybasillo/siaproje" class="social-icon"><img src="asset/images/13.png" alt="Github"></a>
           <!-- Add more social media icons as needed -->
         </div>
       </div>
+
 
     </div>
   </section>
@@ -244,24 +245,23 @@
       <div class="footer-content">
         <div class="contact-info">
           <h3>Contact Information</h3>
-          <p>Email: contact@dota2universe.com</p>
-          <p>Phone: +1 (555) 123-4567</p>
-          <p>Address: 123 Gaming Street, GameCity</p>
+          <p>Email: germanylungay@dota2universe.com</p>
+          <p>Phone: +93 9944398759</p>
+          <p>Address: Purok papaya la union, GameCity</p>
         </div>
         <div class="quick-links">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Heroes</a></li>
-            <li><a href="#">Tournaments</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="home">Home</a></li>
+            <li><a href="heroes">Heroes</a></li>
+            <li><a href="tournaments">Tournaments</a></li>
+            <li><a href="news">News</a></li>
+            <li><a href="contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
   @show
-
 </body>
 </html>
