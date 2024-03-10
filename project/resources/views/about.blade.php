@@ -1,4 +1,4 @@
-@extends('aboutT')
+@extends('welcome')
 @section('title')
 HOME
 @endsection
