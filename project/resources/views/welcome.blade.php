@@ -60,9 +60,9 @@
                             Join Now
                         </a>
                         <div class="dropdown-menu" aria-labelledby="">
-                            <a class="dropdown-item" href="#">Become a Member</a>
-                            <a class="dropdown-item" href="#">Events RSVP</a>
-                            <a class="dropdown-item" href="#">Member Login</a>
+                            <a class="dropdown-item" href="bam">Become a Member</a>
+                            <a class="dropdown-item" href="ersvp">Events RSVP</a>
+                            <a class="dropdown-item" href="bl">Member Login</a>
                         </div>
                     </li>
 
