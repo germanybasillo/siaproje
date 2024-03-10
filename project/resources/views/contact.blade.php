@@ -1,10 +1,10 @@
-@extends('contactT')
+@extends('welcome')
 @section('title')
 HOME
 @endsection
 
 
-@section('content')
+@section('header')
 @parent
 <div class = "container text-center">
    
