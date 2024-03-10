@@ -18,7 +18,7 @@
 
 <body>
 
-@section('headnav')
+@section('header')
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
