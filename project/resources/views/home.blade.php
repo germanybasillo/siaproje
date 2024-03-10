@@ -1,4 +1,4 @@
-@extends('homeT')
+@extends('welcome')
 @section('title')
 HOME
 @endsection
