@@ -186,7 +186,7 @@
                 <!-- Article 1 -->
                 <div class="col-md-4">
                     <div class="article-card">
-                        <img src="article1.jpg" alt="Article 1">
+                        <img src="asset/images/207.jpg" alt="Article 1">
                         <div class="article-card-body">
                             <h3 class="article-title">Empowering Girls Through Education</h3>
                             <p class="article-details">Published on: March 10, 2024<br>Author: Jane Doe</p>
@@ -200,7 +200,7 @@
                 <!-- Article 2 -->
                 <div class="col-md-4">
                     <div class="article-card">
-                        <img src="article2.jpg" alt="Article 2">
+                        <img src="asset/images/208.jpg" alt="Article 2">
                         <div class="article-card-body">
                             <h3 class="article-title">Building Confidence in Teenage Girls</h3>
                             <p class="article-details">Published on: March 5, 2024<br>Author: John Smith</p>
@@ -214,7 +214,7 @@
                 <!-- Article 3 -->
                 <div class="col-md-4">
                     <div class="article-card">
-                        <img src="article3.jpg" alt="Article 3">
+                        <img src="asset/images/209.jpg" alt="Article 3">
                         <div class="article-card-body">
                             <h3 class="article-title">Fostering Leadership Skills in Girls</h3>
                             <p class="article-details">Published on: February 28, 2024<br>Author: Emily Johnson</p>
