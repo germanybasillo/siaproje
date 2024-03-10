@@ -1,6 +1,6 @@
 @extends('welcome')
 @section('title')
-HOME
+ABOUT
 @endsection
 
 
