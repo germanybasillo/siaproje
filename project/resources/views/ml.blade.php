@@ -36,7 +36,8 @@
             box-sizing: border-box;
         }
         button {
-            background-color: #ff80ab;
+            background-color: #ff4d6d;
+            transition: background-color 0.3s ease-in-out
             color: #fff;
             padding: 10px 20px;
             border: none;
@@ -44,8 +45,10 @@
             cursor: pointer;
             font-size: 16px;
         }
-        button:hover {
-            background-color: #ff5470;
+        button:hover,
+        button:focus {
+            background-color: #ff3b5a;
+            border-color: #ff3b5a;
         }
         </style>
 @extends('templete')

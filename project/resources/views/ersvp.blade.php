@@ -47,6 +47,22 @@
             color: #4caf50;
             font-weight: bold;
         }
+
+        .button{
+            background-color: #ff4d6d;
+            transition: background-color 0.3s ease-in-out;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover,
+        .button:focus{
+            background-color: #ff3b5a;
+            border-color: #ff3b5a;
+        }
     </style>
 @extends('templete')
 @section('title')
@@ -82,7 +98,7 @@ EVENT_RSVP
                 <label for="attendees">Number of Attendees:</label>
                 <input type="number" id="attendees" name="attendees" min="1" required>
 
-                <input type="submit" value="RSVP">
+                <input type="submit" class="button" value="RSVP">
             </form>
         </div>
 

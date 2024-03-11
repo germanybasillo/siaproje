@@ -42,7 +42,7 @@
             margin: 0 20px;
             padding: 15px 30px;
             border-radius: 5px;
-            background-color: #ff80ab;
+            background-color: #ff4d6d;
             color: #fff;
             font-weight: bold;
             text-transform: uppercase;
@@ -50,8 +50,10 @@
             text-decoration: none;
             transition: background-color 0.3s ease-in-out;
         }
-        .cta-buttons a:hover {
-            background-color: #ff5470;
+        .cta-buttons a:hover,
+        .cta-buttons a:focus {
+            background-color: #ff3b5a;
+            border-color: #ff3b5a;
         }
     </style>
 @extends('templete')

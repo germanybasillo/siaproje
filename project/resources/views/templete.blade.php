@@ -3,7 +3,7 @@
 
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="{{asset('asset/images/.png')}}">
+    <link rel="icon" href="{{asset('asset/images/logo1.png')}}">
     <link rel="stylesheet" href="{{asset('asset/bootstrap/icons/font/bootstrap-icons.min.css')}}">
     <link rel="stylesheet" href="{{ asset('asset/css1/bootstrap5.css') }}">
     <link rel="stylesheet" href="{{ asset('asset/css1/style1.css') }}">
@@ -24,7 +24,7 @@
         <div class="container-fluid">
 
             <!-- Logo and Brand -->
-            <a class="navbar-brand" href="/">Girls Society</a>
+            <a class="navbar-brand" href="/">G<img src="asset/images/logo1.png" style="width:50px;">S</a>
 
             <!-- Toggle Button for Mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
