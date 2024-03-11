@@ -59,7 +59,7 @@ EVENT
     <section>
         <h2>Upcoming Events</h2>
         <div class="event">
-            <img src="event-image.jpg" alt="Event Image">
+            <img src="/asset/images/223.jpg" alt="Event Image">
             <div class="event-details">
                 <h3>Event Title</h3>
                 <p>Date: [Event Date]</p>
@@ -74,7 +74,7 @@ EVENT
     <section>
         <h2>Past Events</h2>
         <div class="event">
-            <img src="past-event-image.jpg" alt="Past Event Image">
+            <img src="/asset/images/224.jpg" alt="Past Event Image">
             <div class="event-details">
                 <h3>Past Event Title</h3>
                 <p>Date: [Past Event Date]</p>

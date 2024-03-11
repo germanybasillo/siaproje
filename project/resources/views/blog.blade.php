@@ -7,13 +7,7 @@ body {
             background-color: #f8f8f8;
             color: #333;
         }
-        header {
-            background-color: #ff80ab;
-            padding: 20px;
-            text-align: center;
-            color: #fff;
-        }
-        section {
+        section,header {
             padding: 40px;
             text-align: center;
             background-color: #fff;
@@ -68,10 +62,14 @@ BLOG
 @section('header')
 @parent
 <div class = "container text-center">
+<header>
+        <h1>Blog - Girls Society</h1>
+        <!-- You can add a logo or image here -->
+    </header>
 <section>
         <h2>Featured Blog Posts</h2>
         <div class="blog-post">
-            <img src="featured-post-image.jpg" alt="Featured Post Image">
+            <img src="/asset/images/225.jpg" alt="Featured Post Image">
             <div class="blog-details">
                 <h3>Featured Post Title</h3>
                 <p>Date: [Post Date]</p>
