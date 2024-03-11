@@ -62,7 +62,7 @@
                         <div class="dropdown-menu" aria-labelledby="">
                             <a class="dropdown-item" href="bam">Become a Member</a>
                             <a class="dropdown-item" href="ersvp">Events RSVP</a>
-                            <a class="dropdown-item" href="bl">Member Login</a>
+                            <a class="dropdown-item" href="ml">Member Login</a>
                         </div>
                     </li>
 
@@ -228,49 +228,6 @@
         </div>
     </section>
     @show
-
-    @section('join')
-   <!-- Contact Section -->
-   <section class="contact-section">
-        <div class="container">
-            <h2>Contact Us</h2>
-
-            <!-- Contact Information -->
-            <div class="contact-info">
-                <p>Email: info@girlssociety.org</p>
-                <p>Phone: +1 (123) 456-7890</p>
-                <p>Follow us on <a href="#" target="_blank">Instagram</a> and <a href="#" target="_blank">Twitter</a></p>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="contact-form">
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-
-            <!-- Map Section -->
-            <div class="map-section">
-                <h3>Visit Us</h3>
-                <div class="map-responsive">
-                    <!-- Replace the URL in the src attribute with your own Google Maps embed code -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678910111213!2d-74.005972!3d40.712776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDQ5JzUzLjIiTiA3NMKwNTcnMDcuMiJX!5e0!3m2!1sen!2sus!4v1556550287736!5m2!1sen!2sus"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-    @show
-
 
     @section('footer')
     <!-- Footer Section -->
