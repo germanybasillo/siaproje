@@ -49,9 +49,31 @@ body {
             flex-wrap: wrap;
             justify-content: space-around;
         }
+
         .recent-post {
-            max-width: 300px;
+            width: 100%;
+            max-width: 400px; /* Adjust the maximum width as needed */
             margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .recent-post img {
+            width: 100%;
+            max-width: 100%; /* Make sure images don't exceed their container */
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .blog-details {
+            text-align: left;
+        }
+
+        /* Media query for smaller screens */
+        @media only screen and (max-width: 768px) {
+            .recent-post {
+                max-width: 100%; /* Full width on smaller screens */
+            }
         }
     </style>
 @extends('templete')
@@ -83,7 +105,7 @@ BLOG
         <h2>Recent Posts</h2>
         <div class="recent-posts">
             <div class="recent-post">
-                <img src="recent-post1-image.jpg" alt="Recent Post 1 Image">
+                <img src="asset/images/226.jpg" alt="Recent Post 1 Image" style="width:400px;">
                 <div class="blog-details">
                     <h3>Recent Post 1 Title</h3>
                     <p>Date: [Post Date]</p>
@@ -91,7 +113,7 @@ BLOG
                 </div>
             </div>
             <div class="recent-post">
-                <img src="recent-post2-image.jpg" alt="Recent Post 2 Image">
+                <img src="asset/images/227.jpg" alt="Recent Post 2 Image" style="width:400px;">
                 <div class="blog-details">
                     <h3>Recent Post 2 Title</h3>
                     <p>Date: [Post Date]</p>

@@ -86,7 +86,7 @@ CONTACT
             <label for="message">Your Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
-            <button type="submit">Send Message</button>
+            <button type="submit" style="margin-top:20px;">Send Message</button>
         </form>
     </section>
 
