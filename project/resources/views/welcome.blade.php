@@ -77,7 +77,7 @@
         <div class="container">
             <h1 class="display-4">Empowering Girls, Building Futures</h1>
             <p class="lead">Join the community and be part of a supportive network of amazing girls making a difference.</p>
-            <a href="https://www.worldvision.com.au/womens-empowerment" class="btn btn-primary btn-lg">Join Now</a>
+            <a href="ml" class="btn btn-primary btn-lg">Join Now</a>
         </div>
     </section>
     @show
