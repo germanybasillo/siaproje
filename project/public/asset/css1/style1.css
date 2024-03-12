@@ -26,7 +26,8 @@ body {
 
 /* Navigation Links Styles */
 .navbar-nav {
-    margin-right: 30px;
+    float:right;
+    text-align: right;
 }
 
 .nav-item {
