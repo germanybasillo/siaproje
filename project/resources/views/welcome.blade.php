@@ -63,6 +63,7 @@
                             <a class="dropdown-item" href="bam">Become a Member</a>
                             <a class="dropdown-item" href="ersvp">Events RSVP</a>
                             <a class="dropdown-item" href="ml">Member Login</a>
+                            <a class="dropdown-item" href="register">Register</a>
                         </div>
                     </li>
 

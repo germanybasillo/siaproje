@@ -42,9 +42,13 @@ MEMBER_LOGIN
 @parent
 <div class = "container text-center">
     <h1>Girls Society</h1>
-    <div class="container">
-        <h2 class="text-center mb-4">Member-Login</h2>
+<div class="container">
+        <h2 class="text-center mb-4">Register</h2>
         <form>
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+            </div>
             <div class="form-group">
                 <label for="email">Email address</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter email" required>
@@ -53,7 +57,11 @@ MEMBER_LOGIN
                 <label for="password">Password</label>
                 <input type="password" class="form-control" id="password" placeholder="Password" required>
             </div>
-            <button type="submit" class="btni">Login</button>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit" class="btni">Register</button>
         </form>
     </div>
 </div>

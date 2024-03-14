@@ -47,5 +47,8 @@ Route::name('joinNow.')->group(function () {
      Route::get('/ml', function () {
          return view('ml');
     })->name('ml');
+    Route::get('/register', function () {
+        return view('register');
+   })->name('register');
 });
 
