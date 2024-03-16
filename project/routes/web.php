@@ -81,9 +81,10 @@ Route::prefix('/')->group(function () {
     Route::get('blog', [PagesController::class, 'blog']);
     Route::get('bam', [PagesController::class, 'bam']);
     Route::get('ersvp', [PagesController::class, 'ersvp']);
-    Route::get('ml', [PagesController::class, 'ml']);
-    Route::get('login', [PagesController::class, 'login']);
-    Route::get('register', [PagesController::class, 'register']);
+    // Route::get('ml', [PagesController::class, 'ml']);
+    // Route::get('register', [PagesController::class, 'register']);
 });
 
-
+use App\Http\Controllers\CustomAuthController;
+ Route::get('ml', [CustomAuthController::class, 'ml']);
+    Route::get('register', [CustomAuthController::class, 'register']);
