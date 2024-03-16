@@ -56,20 +56,60 @@ class CustomAuthController extends Controller
     }
 }
 
-public function dashboard(){
+public function logout(){
+    if(Session::has('loginId')){
+        Session::pull('loginId');
+        return redirect('ml');
+    }
+}
 
+public function home(Request $request)
+    {
+        $data =array();
+        if(Session::has('loginId')){
+            $data = User::where('id', '=',Session::get('loginId'))->first();
+        }
+        return view('auth.home', compact('data'));
+
+}
+
+public function about(Request $request)
+    {
+        $data =array();
+        if(Session::has('loginId')){
+            $data = User::where('id', '=',Session::get('loginId'))->first();
+        }
+        return view('auth.about', compact('data'));
+
+}
+
+public function contact(Request $request)
+    {
+        $data =array();
+        if(Session::has('loginId')){
+            $data = User::where('id', '=',Session::get('loginId'))->first();
+        }
+        return view('auth.contact', compact('data'));
+
+    }
+
+        public function event(Request $request)
+    {
+        $data =array();
+        if(Session::has('loginId')){
+            $data = User::where('id', '=',Session::get('loginId'))->first();
+        }
+        return view('auth.event', compact('data'));
+}
+
+public function ersvp(Request $request)
+{
     $data =array();
     if(Session::has('loginId')){
         $data = User::where('id', '=',Session::get('loginId'))->first();
     }
-    return view('auth.dashboard', compact('data'));
+    return view('auth.ersvp', compact('data'));
 }
 
-public function logout(){
-    if(Session::has('loginId')){
-        Session::pull('loginId');
-        return redicrect('auth.login');
-    }
-}
-}
 
+}

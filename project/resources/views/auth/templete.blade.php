@@ -66,8 +66,16 @@
                             <a class="dropdown-item" href="register">Register</a>
                         </div>
                     </li>
-
-                </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  href="#" id="" role=""
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{$data->name}}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="">
+                            <a class="dropdown-item" href="logout">Log Out</a>
+                        </div>
+                    </li>
+                </ul>   
             </div>
         </div>
     </nav>

@@ -33,7 +33,7 @@
             border-color: #ff3b5a;
     }
     </style>
-@extends('templete')
+@extends('auth.LRtemplete')
 @section('title')
 Register
 @endsection

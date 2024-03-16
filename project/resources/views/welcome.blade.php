@@ -37,7 +37,7 @@
                 <ul class="navbar-nav ml-auto">
 
                     <!-- Regular Links -->
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="home">Home</a>
                     </li>
                     <li class="nav-item">
@@ -51,7 +51,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact">Contact</a>
-                    </li>
+                    </li> -->
 
                     <!-- Dropdown Link -->
                     <li class="nav-item dropdown">
@@ -60,13 +60,13 @@
                             Join Now
                         </a>
                         <div class="dropdown-menu" aria-labelledby="">
-                            <a class="dropdown-item" href="bam">Become a Member</a>
-                            <a class="dropdown-item" href="ersvp">Events RSVP</a>
+                            <!-- <a class="dropdown-item" href="bam">Become a Member</a>
+                            <a class="dropdown-item" href="ersvp">Events RSVP</a> -->
                             <a class="dropdown-item" href="ml">Member Login</a>
                             <a class="dropdown-item" href="register">Register</a>
                         </div>
                     </li>
-
+                    
                 </ul>
             </div>
         </div>
