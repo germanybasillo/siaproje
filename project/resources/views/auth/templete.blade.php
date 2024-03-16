@@ -57,7 +57,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"  href="#" id="" role=""
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Join Now
+                            Member Pack
                         </a>
                         <div class="dropdown-menu" aria-labelledby="">
                             <a class="dropdown-item" href="bam">Become a Member</a>
