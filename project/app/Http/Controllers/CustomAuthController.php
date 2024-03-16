@@ -65,6 +65,11 @@ public function dashboard(){
     return view('auth.dashboard', compact('data'));
 }
 
-
+public function logout(){
+    if(Session::has('loginId')){
+        Session::pull('loginId');
+        return redicrect('auth.login');
+    }
+}
 }
 
