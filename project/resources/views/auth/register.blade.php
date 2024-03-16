@@ -44,31 +44,51 @@ Register
     <h1>Girls Society</h1>
 <div class="container">
         <h2 class="text-center mb-4">Register</h2>
-        <form>
-            <div class="form-group">
-                <label for="fullName">Full Name</label>
-                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Password" required>
-            </div>
-            <div class="form-group">
-                <label for="confirmPassword">Confirm Password</label>
-                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="agreeTerms" name="admin">
-                <label class="form-check-label" for="agreeTerms">Check if you are the admin.</label>
-            </div>
-            <button type="submit" class="btni">Register</button>
-            <br>
-            <a href="ml">Already a Member!! Login Here.</a>
-        </form>
+        <form action="{{ route('register-user') }}" method="post">
+    @csrf
+
+    @if(Session::has('success'))
+        <div class="alert alert-success">{{ Session::get('success') }}</div>
+    @endif
+
+    @if(Session::has('fail'))
+        <div class="alert alert-danger">{{ Session::get('fail') }}</div>
+    @endif
+
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" class="form-control" placeholder="Enter your full name" name="name" value="{{ old('name') }}">
+        <span class="text-danger">@error('name') {{ $message }} @enderror</span>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control"   placeholder="Enter your email" name="email" value="{{ old('email') }}">
+        <span class="text-danger">@error('email') {{ $message }} @enderror</span>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control"  name="password" placeholder="Password">
+        <span class="text-danger">@error('password') {{ $message }} @enderror</span>
+    </div>
+
+    <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" class="form-control" name="confirmpassword" placeholder="Confirm Password">
+        <span class="text-danger">@error('confirmPassword') {{ $message }} @enderror</span>
+    </div>
+
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="agreeTerms" name="admin">
+        <label class="form-check-label" for="agreeTerms">Check if you are the admin.</label>
+    </div>
+
+    <button type="submit" class="btni">Register</button>
+    <br>
+    <a href="ml">Already a Member!! Login Here.</a>
+</form>
+
     </div>
 </div>
 @endsection
