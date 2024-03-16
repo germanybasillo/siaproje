@@ -44,15 +44,26 @@ MEMBER_LOGIN
     <h1>Girls Society</h1>
     <div class="container">
         <h2 class="text-center mb-4">Member-Login</h2>
-        <form>
-            <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Password">
-            </div>
+        <form action="{{ route('login-user') }}" method="post">
+    @csrf
+    @if(Session::has('success'))
+        <div class="alert alert-success">{{ Session::get('success') }}</div>
+    @endif
+
+    @if(Session::has('fail'))
+        <div class="alert alert-danger">{{ Session::get('fail') }}</div>
+    @endif
+
+        <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control"   placeholder="Enter your email" name="email" value="{{ old('email') }}">
+        <span class="text-danger">@error('email') {{ $message }} @enderror</span>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control"  name="password" placeholder="Password">
+        <span class="text-danger">@error('password') {{ $message }} @enderror</span>
+    </div>
             <button type="submit" class="btni">Login</button>
             <br>
             <a href="register">Not Member yet!! Register Here.</a>

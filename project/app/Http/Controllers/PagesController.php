@@ -47,14 +47,14 @@ class PagesController extends Controller
         return view('ersvp');
     }
 
-    public function ml()
-    {
-        return view('ml');
-    }
+    // public function ml()
+    // {
+    //     return view('ml');
+    // }
 
-    public function register()
-    {
-        return view('register');
-    }
+    // public function register()
+    // {
+    //     return view('register');
+    // }
 }
 

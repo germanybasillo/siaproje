@@ -88,4 +88,6 @@ Route::prefix('/')->group(function () {
 use App\Http\Controllers\CustomAuthController;
  Route::get('ml', [CustomAuthController::class, 'ml']);
     Route::get('register', [CustomAuthController::class, 'register']);
+    Route::get('dashboard', [CustomAuthController::class, 'dashboard']);
     Route::post('/register-user', [CustomAuthController::class, 'registerUser'])->name('register-user');
+    Route::post('/login-user', [CustomAuthController::class, 'loginUser'])->name('login-user');
