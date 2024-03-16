@@ -58,7 +58,7 @@
         }
     </style>
 
-@extends('templete')
+@extends('auth.templete')
 @section('title')
 CONTACT
 @endsection

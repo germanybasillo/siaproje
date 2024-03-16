@@ -44,7 +44,7 @@
             text-align: left;
         }
     </style>
-@extends('templete')
+@extends('auth.templete')
 @section('title')
 EVENT
 @endsection

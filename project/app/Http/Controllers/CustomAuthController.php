@@ -47,7 +47,7 @@ class CustomAuthController extends Controller
            if($user) {
             if(Hash::check($request->password,$user->password)){
                 $request->session()->put('loginId',$user->id);
-                return redirect('dashboard');
+                return redirect('home');
             }else{
                 return back()->with('fail','Password not matches.');
             }
@@ -111,5 +111,31 @@ public function ersvp(Request $request)
     return view('auth.ersvp', compact('data'));
 }
 
+public function welcome(Request $request)
+{
+    $data =array();
+    if(Session::has('loginId')){
+        $data = User::where('id', '=',Session::get('loginId'))->first();
+    }
+    return view('auth.welcome', compact('data'));
+}
+
+public function blog(Request $request)
+{
+    $data =array();
+    if(Session::has('loginId')){
+        $data = User::where('id', '=',Session::get('loginId'))->first();
+    }
+    return view('auth.blog', compact('data'));
+}
+
+public function bam(Request $request)
+{
+    $data =array();
+    if(Session::has('loginId')){
+        $data = User::where('id', '=',Session::get('loginId'))->first();
+    }
+    return view('auth.bam', compact('data'));
+}
 
 }

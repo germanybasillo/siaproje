@@ -3,7 +3,7 @@
 
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="{{asset('/asset/images/logo1.png')}}">
+    <link rel="icon" href="{{asset('asset/images/logo1.png')}}">
     <link rel="stylesheet" href="{{asset('asset/bootstrap/icons/font/bootstrap-icons.min.css')}}">
     <link rel="stylesheet" href="{{ asset('asset/css1/bootstrap5.css') }}">
     <link rel="stylesheet" href="{{ asset('asset/css1/style1.css') }}">
@@ -37,7 +37,7 @@
                 <ul class="navbar-nav ml-auto">
 
                     <!-- Regular Links -->
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="home">Home</a>
                     </li>
                     <li class="nav-item">
@@ -51,23 +51,31 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact">Contact</a>
-                    </li> -->
+                    </li>
 
                     <!-- Dropdown Link -->
-                    <!-- <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"  href="#" id="" role=""
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Join Now
                         </a>
-                        <div class="dropdown-menu" aria-labelledby=""> -->
-                            <!-- <a class="dropdown-item" href="bam">Become a Member</a>
-                            <a class="dropdown-item" href="ersvp">Events RSVP</a> -->
+                        <div class="dropdown-menu" aria-labelledby="">
+                            <a class="dropdown-item" href="bam">Become a Member</a>
+                            <a class="dropdown-item" href="ersvp">Events RSVP</a>
                             <!-- <a class="dropdown-item" href="ml">Member Login</a>
-                            <a class="dropdown-item" href="register">Register</a>
+                            <a class="dropdown-item" href="register">Register</a> -->
                         </div>
-                    </li> -->
-                    
-                </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  href="#" id="" role=""
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{$data->name}}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="">
+                            <a class="dropdown-item" href="logout">Log Out</a>
+                        </div>
+                    </li>
+                </ul>   
             </div>
         </div>
     </nav>

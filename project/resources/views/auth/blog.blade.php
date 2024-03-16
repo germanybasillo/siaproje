@@ -76,7 +76,7 @@ body {
             }
         }
     </style>
-@extends('templete')
+@extends('auth.templete')
 @section('title')
 BLOG
 @endsection

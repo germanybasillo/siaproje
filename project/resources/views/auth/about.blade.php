@@ -47,7 +47,7 @@ body {
             margin-top: 30px;
         }
     </style>
-@extends('templete')
+@extends('auth.templete')
 @section('title')
 ABOUT
 @endsection

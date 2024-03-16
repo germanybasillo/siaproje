@@ -3,7 +3,7 @@
 
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="{{asset('asset/images/logo1.png')}}">
+    <link rel="icon" href="{{asset('/asset/images/logo1.png')}}">
     <link rel="stylesheet" href="{{asset('asset/bootstrap/icons/font/bootstrap-icons.min.css')}}">
     <link rel="stylesheet" href="{{ asset('asset/css1/bootstrap5.css') }}">
     <link rel="stylesheet" href="{{ asset('asset/css1/style1.css') }}">
@@ -22,12 +22,57 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
+
             <!-- Logo and Brand -->
             <a class="navbar-brand" href="/">G<img src="asset/images/logo1.png" style="width:50px;">S</a>
+
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+
+                    <!-- Regular Links -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="event">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact">Contact</a>
+                    </li> -->
+
+                    <!-- Dropdown Link -->
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  href="#" id="" role=""
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Join Now
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby=""> -->
+                            <!-- <a class="dropdown-item" href="bam">Become a Member</a>
+                            <a class="dropdown-item" href="ersvp">Events RSVP</a> -->
+                            <!-- <a class="dropdown-item" href="ml">Member Login</a>
+                            <a class="dropdown-item" href="register">Register</a>
+                        </div>
+                    </li> -->
+                    
+                </ul>
+            </div>
         </div>
     </nav>
     @show
-   
+
     @section('footer')
     <!-- Footer Section -->
     <footer class="footer">

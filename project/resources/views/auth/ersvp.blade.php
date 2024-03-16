@@ -64,7 +64,7 @@
             border-color: #ff3b5a;
         }
     </style>
-@extends('templete')
+@extends('auth.templete')
 @section('title')
 EVENT_RSVP
 @endsection

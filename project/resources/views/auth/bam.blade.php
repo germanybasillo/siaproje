@@ -60,7 +60,7 @@
             border-color: #ff3b5a;
         }
     </style>
-@extends('templete')
+@extends('auth.templete')
 @section('title')
 BECOME_A_MEMBER
 @endsection
