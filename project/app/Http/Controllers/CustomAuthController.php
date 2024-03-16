@@ -8,10 +8,10 @@ class CustomAuthController extends Controller
 {
     public function ml()
 {
-    return "ml";
+    return view("auth.ml");
 }
     public function register()
 {
-    return "register";
+    return view("auth.register");
 }
 }

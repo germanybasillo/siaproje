@@ -54,6 +54,8 @@ MEMBER_LOGIN
                 <input type="password" class="form-control" id="password" placeholder="Password" required>
             </div>
             <button type="submit" class="btni">Login</button>
+            <br>
+            <a href="register">Not Member yet!! Register Here.</a>
         </form>
     </div>
 </div>
