@@ -35,7 +35,7 @@
     </style>
 @extends('templete')
 @section('title')
-MEMBER_LOGIN
+Register
 @endsection
 
 @section('header')
