@@ -19,16 +19,23 @@ class CustomAuthController extends Controller
 }
     public function registerUser(Request $request)
 {
-        $request->validate([
-            'name'=>'required',
-            'email'=>'required |email |unique:users',
-            'password'=>'required |min:5 |max:10'
-        ]);
+    $rules = [
+        'name' => 'required|string|max:255',
+        'email' => 'required|email|unique:users,email',
+        'password' => 'required|min:6|max:10 confirmed',
+    ];
+
         $user = new User();
         $user ->name = $request ->name;
         $user ->email = $request ->email;
         $user ->password = Hash::make($request ->password);
+        $isAdmin = User::where('admin', true)->doesntExist();
+
+        // Set user as admin only if there are no existing admins
+        $user->admin = $isAdmin ? true : false;
+
         $res = $user->save();
+
         if($res){
             return back()->with('success','You have a member now');
         }else{

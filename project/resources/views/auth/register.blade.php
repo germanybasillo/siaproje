@@ -80,10 +80,9 @@ Register
     </div>
 
     <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="agreeTerms" name="admin">
-        <label class="form-check-label" for="agreeTerms">Check if you are the admin.</label>
-    </div>
-
+    <input type="checkbox" class="form-check-input" id="agreeTerms" name="admin" value="1">
+    <label class="form-check-label" for="agreeTerms">Check if you are the admin.</label>
+</div>
     <button type="submit" class="btni">Register</button>
     <br>
     <a href="ml">Already a Member!! Login Here.</a>
