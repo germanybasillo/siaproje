@@ -72,7 +72,7 @@ public function registerUser(Request $request)
     {
             $request->validate([
                 'email'=>'required |email',
-                'password'=>'required |min:5 |max:10'
+                'password'=>'required',
             ]);
            $user = User::where('email', '=', $request->email)->first();
            if($user) {
