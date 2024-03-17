@@ -38,19 +38,19 @@
 
                     <!-- Regular Links -->
                     <li class="nav-item">
-                        <a class="nav-link" href="home">Home</a>
+                        <a class="nav-link" href='home'>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about">About Us</a>
+                        <a class="nav-link" href='about'>About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="event">Events</a>
+                        <a class="nav-link" href='event'>Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog">Blog</a>
+                        <a class="nav-link" href='blog'>Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact">Contact</a>
+                        <a class="nav-link" href='contact'>Contact</a>
                     </li>
 
                     <!-- Dropdown Link -->
@@ -60,8 +60,8 @@
                             Member Pack
                         </a>
                         <div class="dropdown-menu" aria-labelledby="">
-                            <a class="dropdown-item" href="bam">Become a Member</a>
-                            <a class="dropdown-item" href="ersvp">Events RSVP</a>
+                            <a class="dropdown-item" href='bam'>Become a Member</a>
+                            <a class="dropdown-item" href='ersvp'>Events RSVP</a>
                             <!-- <a class="dropdown-item" href="ml">Member Login</a>
                             <a class="dropdown-item" href="register">Register</a> -->
                         </div>
@@ -72,7 +72,7 @@
                             {{$data->name}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="">
-                            <a class="dropdown-item" href="logout">Log Out</a>
+                            <a class="dropdown-item" href='logout'>Log Out</a>
                         </div>
                     </li>
                 </ul>   

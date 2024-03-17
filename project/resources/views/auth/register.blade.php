@@ -41,7 +41,7 @@ Register
 @section('header')
 @parent
 <div class = "container text-center">
-    <h1>Girls Society</h1>
+<a class="navbar-brand" href="/">G<img src="asset/images/logo1.png" style="width:50px;">S</a>
 <div class="container">
         <h2 class="text-center mb-4">Register</h2>
         <form action="{{ route('register-user') }}" method="post">

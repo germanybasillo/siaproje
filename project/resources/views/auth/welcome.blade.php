@@ -38,26 +38,26 @@
 
                     <!-- Regular Links -->
                     <li class="nav-item">
-                        <a class="nav-link" href="home">Home</a>
+                        <a class="nav-link" href='home'>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about">About Us</a>
+                        <a class="nav-link" href='about'>About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="event">Events</a>
+                        <a class="nav-link" href='event'>Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog">Blog</a>
+                        <a class="nav-link" href='blog'>Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact">Contact</a>
+                        <a class="nav-link" href='contact'>Contact</a>
                     </li>
 
                     <!-- Dropdown Link -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"  href="#" id="" role=""
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Join Now
+                            Member Pack
                         </a>
                         <div class="dropdown-menu" aria-labelledby="">
                             <a class="dropdown-item" href="bam">Become a Member</a>
@@ -72,7 +72,7 @@
                             {{$data->name}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="">
-                            <a class="dropdown-item" href="logout">Log Out</a>
+                            <a class="dropdown-item" href='logout'>Log Out</a>
                         </div>
                     </li>
                 </ul>   
@@ -86,7 +86,7 @@
         <div class="container">
             <h1 class="display-4">Empowering Girls, Building Futures</h1>
             <p class="lead">Join the community and be part of a supportive network of amazing girls making a difference.</p>
-            <a href="ml" class="btn btn-primary btn-lg">Join Now</a>
+            <a href='ersvp' class="btn btn-primary btn-lg">Event RSVP</a>
         </div>
     </section>
     @show

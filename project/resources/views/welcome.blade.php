@@ -25,7 +25,7 @@
 
             <!-- Logo and Brand -->
             <a class="navbar-brand" href="/">G<img src="asset/images/logo1.png" style="width:50px;">S</a>
-
+    
             <!-- Toggle Button for Mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

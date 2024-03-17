@@ -73,7 +73,7 @@ HOME
     <section>
         <h2>About Us</h2>
         <p>Girls Society is a dynamic community committed to empowering girls and creating a supportive environment for growth and success. Our mission is to [briefly state the main goal or purpose of the society].</p>
-        <a href="about">Learn more about us</a>
+        <a href='about'>Learn more about us</a>
     </section>
 
     <section>
@@ -107,7 +107,7 @@ HOME
 
     <section>
         <h2>Contact Us</h2>
-        <p>Have questions or want to connect with Girls Society? We'd love to hear from you. <a href="contact">Contact Information</a></p>
+        <p>Have questions or want to connect with Girls Society? We'd love to hear from you. <a href='contact'>Contact Information</a></p>
     </section>
 
     <section>
