@@ -29,11 +29,6 @@ class CustomAuthController extends Controller
         $user ->name = $request ->name;
         $user ->email = $request ->email;
         $user ->password = Hash::make($request ->password);
-        $isAdmin = User::where('admin', true)->doesntExist();
-
-        // Set user as admin only if there are no existing admins
-        $user->admin = $isAdmin ? true : false;
-
         $res = $user->save();
 
         if($res){
