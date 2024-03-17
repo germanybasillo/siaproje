@@ -13,7 +13,7 @@
     
 
     <head>
-        <title>Girls Society - @yield('title')</title>
+        <title>Girls Society</title>
     </head>
 
 <body>
