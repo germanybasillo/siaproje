@@ -101,7 +101,7 @@ BECOME_A_MEMBER
     <section>
         <h2>Ready to Take the Next Step?</h2>
         <div class="cta-buttons">
-            <a href="membership-application.html">Apply Now</a>
+            <a href="register">Apply Now</a>
         </div>
     </section>
 </div>

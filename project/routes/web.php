@@ -85,19 +85,40 @@ Route::prefix('/')->group(function () {
     // Route::get('register', [PagesController::class, 'register']);
 });
 
-use App\Http\Controllers\CustomAuthController;
+// use App\Http\Controllers\CustomAuthController;
 
- Route::get('ml', [CustomAuthController::class, 'ml']);
-    Route::get('register', [CustomAuthController::class, 'register']);
-    Route::get('welcome', [CustomAuthController::class, 'welcome'])->middleware('isLoggedIn');
-    Route::get('home', [CustomAuthController::class, 'home'])->middleware('isLoggedIn');
-    Route::get('about', [CustomAuthController::class, 'about'])->middleware('isLoggedIn');
-    Route::get('contact', [CustomAuthController::class, 'contact'])->middleware('isLoggedIn');
-    Route::get('blog', [CustomAuthController::class, 'blog'])->middleware('isLoggedIn');
-    Route::get('event', [CustomAuthController::class, 'event'])->middleware('isLoggedIn');
-    Route::get('ersvp', [CustomAuthController::class, 'ersvp'])->middleware('isLoggedIn');
-    Route::get('bam', [CustomAuthController::class, 'bam'])->middleware('isLoggedIn');
+//  Route::get('ml', [CustomAuthController::class, 'ml']);
+//     Route::get('register', [CustomAuthController::class, 'register']);
+//     Route::get('welcome', [CustomAuthController::class, 'welcome'])->middleware('isLoggedIn');
+//     Route::get('home', [CustomAuthController::class, 'home'])->middleware('isLoggedIn');
+//     Route::get('about', [CustomAuthController::class, 'about'])->middleware('isLoggedIn');
+//     Route::get('contact', [CustomAuthController::class, 'contact'])->middleware('isLoggedIn');
+//     Route::get('blog', [CustomAuthController::class, 'blog'])->middleware('isLoggedIn');
+//     Route::get('event', [CustomAuthController::class, 'event'])->middleware('isLoggedIn');
+//     Route::get('ersvp', [CustomAuthController::class, 'ersvp'])->middleware('isLoggedIn');
+//     Route::get('bam', [CustomAuthController::class, 'bam'])->middleware('isLoggedIn');
+//     Route::get('logout', [CustomAuthController::class, 'logout']);
+
+//     Route::post('/register-user', [CustomAuthController::class, 'registerUser'])->name('register-user');
+//     Route::post('/login-user', [CustomAuthController::class, 'loginUser'])->name('login-user');
+
+
+    use App\Http\Controllers\CustomAuthController;
+    
+Route::group(['middleware' => 'isLoggedIn'], function () {
+    Route::get('welcome', [CustomAuthController::class, 'welcome']);
+    Route::get('home', [CustomAuthController::class, 'home']);
+    Route::get('about', [CustomAuthController::class, 'about']);
+    Route::get('contact', [CustomAuthController::class, 'contact']);
+    Route::get('blog', [CustomAuthController::class, 'blog']);
+    Route::get('event', [CustomAuthController::class, 'event']);
+    Route::get('ersvp', [CustomAuthController::class, 'ersvp']);
+    Route::get('bam', [CustomAuthController::class, 'bam']);
     Route::get('logout', [CustomAuthController::class, 'logout']);
+});
 
-    Route::post('/register-user', [CustomAuthController::class, 'registerUser'])->name('register-user');
-    Route::post('/login-user', [CustomAuthController::class, 'loginUser'])->name('login-user');
+Route::get('ml', [CustomAuthController::class, 'ml']);
+Route::get('register', [CustomAuthController::class, 'register']);
+
+Route::post('/register-user', [CustomAuthController::class, 'registerUser'])->name('register-user');
+Route::post('/login-user', [CustomAuthController::class, 'loginUser'])->name('login-user');
