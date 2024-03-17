@@ -17,56 +17,28 @@ class CustomAuthController extends Controller
 {
     return view("auth.register");
 }
-//     public function registerUser(Request $request)
-// {
-//     $rules = [
-//         'name' => 'required|string|max:255',
-//         'email' => 'required|email|unique:users,email',
-//         'password' => 'required|min:6|max:10 confirmed',
-//     ];
-
-//         $user = new User();
-//         $user ->name = $request ->name;
-//         $user ->email = $request ->email;
-//         $user ->password = Hash::make($request ->password);
-//         $res = $user->save();
-
-//         if($res){
-//             return back()->with('success','You have a member now');
-//         }else{
-//             return back()->with('fail','Failed become a member');
-//         }
-        
-//     }
-
-public function registerUser(Request $request)
+    public function registerUser(Request $request)
 {
-    $request->validate([
+    $rules = [
         'name' => 'required|string|max:255',
         'email' => 'required|email|unique:users,email',
-        'password' => 'required|min:6|max:10|confirmed',
-    ]);
+        'password' => 'required|min:6|max:10 confirmed',
+    ];
 
-    // Check if the email already exists in the database
-    $existingUser = User::where('email', $request->email)->first();
+        $user = new User();
+        $user ->name = $request ->name;
+        $user ->email = $request ->email;
+        $user ->password = Hash::make($request ->password);
+        $res = $user->save();
 
-    if ($existingUser) {
-        return back()->with('fail', 'Email address already exists.');
+        if($res){
+            return back()->with('success','You become a member now');
+        }else{
+            return back()->with('fail','Failed become a member');
+        }
+        
     }
 
-    // Create a new user if the email doesn't exist
-    $user = new User();
-    $user->name = $request->name;
-    $user->email = $request->email;
-    $user->password = Hash::make($request->password);
-    $res = $user->save();
-
-    if ($res) {
-        return back()->with('success', 'You have become a member now.');
-    } else {
-        return back()->with('fail', 'Failed to become a member.');
-    }
-}
 
     public function loginUser(Request $request)
     {
