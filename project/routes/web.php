@@ -107,7 +107,7 @@ Route::prefix('/')->group(function () {
     
 Route::group(['middleware' => 'isLoggedIn'], function () {
     Route::get('welcome', [CustomAuthController::class, 'welcome']);
-    Route::get('home', [CustomAuthController::class, 'home']);
+    Route::get('home', [CustomAuthController::class, 'home'])->name('home');
     Route::get('about', [CustomAuthController::class, 'about']);
     Route::get('contact', [CustomAuthController::class, 'contact']);
     Route::get('blog', [CustomAuthController::class, 'blog']);
@@ -122,3 +122,5 @@ Route::get('register', [CustomAuthController::class, 'register']);
 
 Route::post('/register-user', [CustomAuthController::class, 'registerUser'])->name('register-user');
 Route::post('/login-user', [CustomAuthController::class, 'loginUser'])->name('login-user');
+
+Route::get('welcome', [CustomAuthController::class, 'showWelcome'])->name('welcome');

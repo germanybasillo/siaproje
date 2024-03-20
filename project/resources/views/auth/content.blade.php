@@ -16,7 +16,8 @@
         <title>Girls Society-@yield('title')</title>
     </head>
 
-<body>
+<body style="overflow: hidden;">
+<div class="container-fluid vh-100 main-div">
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -95,7 +96,7 @@
         </div>
     </footer>
 
-
+</div>
         <!-- Bootstrap JS Bundle (Popper included) -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>

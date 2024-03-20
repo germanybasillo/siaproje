@@ -6,9 +6,16 @@ body {
     padding: 0;
     background-color: #f8f8f8; /* Light background color for the body */
 }
+.main-div{
+    overflow: hidden;
+}
 
+.main-div:hover{
+    overflow: auto;
+}
 /* Navigation Bar Styles */
 .navbar {
+
     background-color: #ff9f80; /* Coral background color for the navbar */
     border-bottom: 2px solid #ff7043; /* Darker coral border at the bottom */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a friendly lifted look */
@@ -84,6 +91,8 @@ body {
     overflow: hidden;
     background: linear-gradient(rgba(40, 45, 46, 0.9), rgba(0, 0, 0, 0.7)), url('/asset/images/200.webp') center/cover no-repeat fixed;
   }
+
+
 
   .hero h1 {
     font-size: 3.5rem;
