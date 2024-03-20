@@ -58,14 +58,10 @@
         }
     </style>
 
-@extends('auth.templete')
-@section('title')
-CONTACT
-@endsection
+@extends('template.content')
+@section('title','HOME')
 
-
-@section('header')
-@parent
+@section('content')
 <div class = "container text-center">
 <header>
         <h1>Contact Us - Girls Society</h1>

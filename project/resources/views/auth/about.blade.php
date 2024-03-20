@@ -47,14 +47,10 @@ body {
             margin-top: 30px;
         }
     </style>
-@extends('auth.templete')
-@section('title')
-ABOUT
-@endsection
+@extends('template.content')
+@section('title','HOME')
 
-
-@section('header')
-@parent
+@section('content')
 <div class = "container text-center">
 <header>
         <h1>About Us - Girls Society</h1>

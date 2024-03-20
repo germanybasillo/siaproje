@@ -33,13 +33,10 @@
             border-color: #ff3b5a;
     }
     </style>
-@extends('auth.LRtemplete')
-@section('title')
-MEMBER_LOGIN
-@endsection
+@extends('template.lr')
+@section('title','MEMBER LOGIN')
+@section('content')
 
-@section('header')
-@parent
 <div class = "container text-center">
 <a class="navbar-brand" href="/">G<img src="asset/images/logo1.png" style="width:50px;">S</a>
     <div class="container">
@@ -70,4 +67,5 @@ MEMBER_LOGIN
         </form>
     </div>
 </div>
+
 @endsection

@@ -64,13 +64,10 @@
             border-color: #ff3b5a;
         }
     </style>
-@extends('auth.templete')
-@section('title')
-EVENT_RSVP
-@endsection
+@extends('template.content')
+@section('title','HOME')
 
-@section('header')
-@parent
+@section('content')
 <div class = "container text-center">
 <header>
         <h1>Event RSVP - Girls Society</h1>

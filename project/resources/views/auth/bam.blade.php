@@ -60,13 +60,10 @@
             border-color: #ff3b5a;
         }
     </style>
-@extends('auth.templete')
-@section('title')
-BECOME_A_MEMBER
-@endsection
+@extends('template.content')
+@section('title','HOME')
 
-@section('header')
-@parent
+@section('content')
 <div class = "container text-center">
 <header>
         <h1>Become a Member - Girls Society</h1>

@@ -73,6 +73,9 @@
     </nav>
     @show
 
+    <main>
+        @yield('content')
+    </main>
     @section('footer')
     <!-- Footer Section -->
     <footer class="footer">

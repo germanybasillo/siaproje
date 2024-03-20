@@ -76,13 +76,10 @@ body {
             }
         }
     </style>
-@extends('auth.templete')
-@section('title')
-BLOG
-@endsection
+@extends('template.content')
+@section('title','HOME')
 
-@section('header')
-@parent
+@section('content')
 <div class = "container text-center">
 <header>
         <h1>Blog - Girls Society</h1>
