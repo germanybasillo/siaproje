@@ -1,4 +1,4 @@
-@extends('template.content')
+@extends('auth.content')
 @section('title','WELCOME')
 
 @section('content')
@@ -152,3 +152,5 @@
         </div>
     </section>
  @endsection
+
+ 

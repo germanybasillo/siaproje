@@ -64,7 +64,7 @@
             border-color: #ff3b5a;
         }
     </style>
-@extends('template.content')
+@extends('auth.content')
 @section('title','HOME')
 
 @section('content')

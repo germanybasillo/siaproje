@@ -47,7 +47,7 @@ body {
             margin-top: 30px;
         }
     </style>
-@extends('template.content')
+@extends('auth.content')
 @section('title','HOME')
 
 @section('content')

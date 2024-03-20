@@ -44,7 +44,7 @@
             text-align: left;
         }
     </style>
-@extends('template.content')
+@extends('auth.content')
 @section('title','HOME')
 
 @section('content')

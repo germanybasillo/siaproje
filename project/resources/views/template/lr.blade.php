@@ -18,10 +18,7 @@
 
 <body>
 
-@section('header')
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+
 
             <!-- Logo and Brand -->
             <!-- <a class="navbar-brand" href="/">G<img src="asset/images/logo1.png" style="width:50px;">S</a> -->
